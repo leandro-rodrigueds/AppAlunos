@@ -7,6 +7,7 @@ class Tela0 extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text('Tela 0'),
+
       ),
       body: Center(
         child: Column(
@@ -34,6 +35,9 @@ class Tela0 extends StatelessWidget {
           ],
         ),
       ),
+      body: Container(
+        
+      )
     );
   }
 }
