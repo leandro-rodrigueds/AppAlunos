@@ -1,0 +1,9 @@
+child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            primary: Colors.orange,
+          ),
+          child: Text('Ir para a tela 2'),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {return Tela2();},));
+          },
+        ),
