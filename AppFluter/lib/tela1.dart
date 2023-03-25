@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projeto/tela2.dart';
 import 'tela2.dart';
-
-// Alt + Shift + F = organiza o codigo
+import 'tela3.dart';
 
 class Tela1 extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
@@ -22,9 +21,7 @@ class Tela1 extends StatelessWidget {
           child: Form(
             key: _formKey,
             child: Column(
-              //botao ocupa o espaço todo
               crossAxisAlignment: CrossAxisAlignment.stretch,
-
               children: [
                 TextFormField(
                   controller: _nomeAluno,
@@ -56,12 +53,13 @@ class Tela1 extends StatelessWidget {
                   height: 12,
                 ),
                 ElevatedButton(
-                    onPressed: () {
-                      if (_formKey.currentState!.validate()) {
-                        logar();
-                      }
-                    },
-                    child: Text('cadastra'))
+                  onPressed: () {
+                    if (_formKey.currentState!.validate()) {
+                      logar();
+                    }
+                  },
+                  child: Text('Cadastra'),
+                ),
               ],
             ),
           ),

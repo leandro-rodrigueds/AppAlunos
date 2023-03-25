@@ -6,14 +6,15 @@ class Tela0 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text('Tela 0'),
+        title: Text('Trancolar'),
       ),
       body: Container(
         child: Stack(
           children: <Widget>[
             Image.asset(
-            'alt.png',
-            width: 200,
+            'assets/images/alt.png',
+            width: double.infinity,
+            height: double.infinity,
             ),
             Center(
               child: Column(
@@ -36,6 +37,16 @@ class Tela0 extends StatelessWidget {
                     onPressed: () {
                       //Navegar para a tela 2
                       Navigator.pushNamed(context, '/segunda');
+                    },
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Color.fromARGB(255, 0, 2, 150),
+                    ),
+                    child: Text('Ir para a tela 3'),
+                    onPressed: () {
+                      //Navegar para a tela 3
+                      Navigator.pushNamed(context, '/terceira');
                     },
                   ),
                 ],
