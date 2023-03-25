@@ -29,16 +29,11 @@ class Tela0 extends StatelessWidget {
               onPressed: () {
                 //Navegar para a tela 2
                 Navigator.pushNamed(context, '/segunda');
-                decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("images/8xLQJ39.jpg"),
-                fit: BoxFit.cover,
               },
             ),
           ],
         ),
       ),
-     ),
-     ),
+    );
   }
 }
