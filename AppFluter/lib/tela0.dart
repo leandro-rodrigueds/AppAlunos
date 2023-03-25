@@ -8,30 +8,38 @@ class Tela0 extends StatelessWidget {
         backgroundColor: Colors.blue,
         title: Text('Tela 0'),
       ),
-      body: Center(
-        child: Column(
-          children: <Widget>[
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.orange,
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/escolarpag0.jpg'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Center(
+          child: Column(
+            children: <Widget>[
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.orange,
+                ),
+                child: Text('Ir para a tela 1'),
+                onPressed: () {
+                  //Navegar para a tela 1
+                  Navigator.pushNamed(context, '/primeira');
+                },
               ),
-              child: Text('Ir para a tela 1'),
-              onPressed: () {
-                //Navegar para a tela 1
-                Navigator.pushNamed(context, '/primeira');
-              },
-            ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                primary: Colors.teal,
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.teal,
+                ),
+                child: Text('Ir para a tela 2'),
+                onPressed: () {
+                  //Navegar para a tela 2
+                  Navigator.pushNamed(context, '/segunda');
+                },
               ),
-              child: Text('Ir para a tela 2'),
-              onPressed: () {
-                //Navegar para a tela 2
-                Navigator.pushNamed(context, '/segunda');
-              },
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
