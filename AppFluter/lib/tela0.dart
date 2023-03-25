@@ -9,37 +9,39 @@ class Tela0 extends StatelessWidget {
         title: Text('Tela 0'),
       ),
       body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/escolarpag0.jpg'),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.orange,
-                ),
-                child: Text('Ir para a tela 1'),
-                onPressed: () {
-                  //Navegar para a tela 1
-                  Navigator.pushNamed(context, '/primeira');
-                },
+        child: Stack(
+          children: <Widget>[
+            Image.asset(
+            'alt.png',
+            width: 200,
+            ),
+            Center(
+              child: Column(
+                children: <Widget>[
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.orange,
+                    ),
+                    child: Text('Ir para a tela 1'),
+                    onPressed: () {
+                      //Navegar para a tela 1
+                      Navigator.pushNamed(context, '/primeira');
+                    },
+                  ),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.teal,
+                    ),
+                    child: Text('Ir para a tela 2'),
+                    onPressed: () {
+                      //Navegar para a tela 2
+                      Navigator.pushNamed(context, '/segunda');
+                    },
+                  ),
+                ],
               ),
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.teal,
-                ),
-                child: Text('Ir para a tela 2'),
-                onPressed: () {
-                  //Navegar para a tela 2
-                  Navigator.pushNamed(context, '/segunda');
-                },
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
