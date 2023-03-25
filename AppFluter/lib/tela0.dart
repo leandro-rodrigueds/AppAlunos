@@ -12,7 +12,7 @@ class Tela0 extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Image.asset(
-            'assets/images/alt.png',
+            'assets/images/escolar.png',
             width: double.infinity,
             height: double.infinity,
             ),
