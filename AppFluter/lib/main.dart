@@ -11,11 +11,8 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(initialRoute: '/', routes: {
-      '/': (context) => Tela0(),
-      '/primeira': (context) => Tela1(),
-      '/segunda': (context) => Tela2(),
-      '/terceira': (context) => Tela3()
-    });
+    return ChangeNotifierProvider (
+      create:(ctx) =>,
+    );
   }
 }

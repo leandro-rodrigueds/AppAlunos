@@ -10,6 +10,13 @@ class Tela2 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Alunos'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add),
+            color: Colors.green,
+            onPressed: (){},
+            ),
+        ],
       ),
       body: ListView.builder(
         itemCount: usuario.length,

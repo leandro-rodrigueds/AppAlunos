@@ -11,17 +11,22 @@ class UserTile extends StatelessWidget{
     return ListTile(
       title: Text(user.nomeAluno),
       subtitle: Text(user.nomeMae),
-      trailing: Row(
-        children: <Widget>[
+      trailing: Container(
+        width: 100,
+        child: Row(
+          children: <Widget>[
           IconButton(
             icon: Icon(Icons.edit),
+            color: Colors.orange,
             onPressed: (){},
             ),
           IconButton(
+            icon: Icon(Icons.delete),
+            color: Colors.redAccent,
             onPressed: (){},
-          
-            ),
+          ),
         ],
+        ),
       ),
     );
   }
