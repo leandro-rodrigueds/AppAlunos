@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projeto/tela2.dart';
+import 'package:projeto/views/tela2.dart';
 import 'tela2.dart';
 import 'tela3.dart';
 

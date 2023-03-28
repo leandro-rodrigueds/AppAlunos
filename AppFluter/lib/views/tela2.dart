@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto/components/user_tile.dart';
-import 'data/dummy_users.dart';
+import '../data/dummy_users.dart';
 
 class Tela2 extends StatelessWidget {
   @override

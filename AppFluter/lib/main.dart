@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'tela0.dart';
-import 'tela1.dart';
-import 'tela2.dart';
-import 'tela3.dart';
+import 'views/tela0.dart';
+import 'views/tela1.dart';
+import 'views/tela2.dart';
+import 'views/tela3.dart';
 
 void main() {
   runApp(MyApp());
