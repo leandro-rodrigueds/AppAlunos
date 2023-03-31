@@ -1,4 +1,4 @@
-class Local{
+/*class Local{
   late String estado;
   late String cidade;
 
@@ -20,4 +20,4 @@ class Local{
     return "Local => (estado: $estado, cidade: $cidade)";
   }
     }
-}
+}*/
